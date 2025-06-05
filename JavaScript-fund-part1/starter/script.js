@@ -87,7 +87,7 @@ x = y = 25 - 10 - 5;
 console.log(x, y);
 const avarageAge = (ageLasha + ageTsotne) / 2;
 console.log(ageLasha, ageTsotne, avarageAge);
-*/
+
 //CHALLENGE1
 const massMark = 95;
 const heightMark = 1.88;
@@ -98,3 +98,107 @@ const BMIJohn = (massJohn / heightJohn) * heightJohn;
 console.log(BMIMark, BMIJohn);
 let markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
+
+
+const firstName = "Lasha";
+const job = "Teacher";
+const birthYear = 1987;
+const year = 2037;
+
+const lasha =
+  "I'm " + firstName + ", a " + (year - birthYear) + " yaers old " + job + " !";
+console.log(lasha);
+
+const lashaNew = `I'm ${firstName}, a ${year - birthYear} years old ${job} !`;
+console.log(lashaNew);
+console.log(`Just a regular string...`);
+
+console.log(
+  "string with \n\
+    multiple \n\
+    lines"
+);
+
+console.log(`sting 
+multiple
+lines`);
+
+
+const age = 15;
+
+if (age >= 18) {
+  console.log(`Lasha can strat driver's license `);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Lasha is too young. Wait another ${yearsLeft} years!`);
+}
+
+const birthYear = 2021;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+const BMIMark = (massMark / heightMark) * heightMark;
+const BMIJohn = (massJohn / heightJohn) * heightJohn;
+console.log(BMIMark, BMIJohn);
+let markHigherBMI = BMIMark > BMIJohn;
+console.log(markHigherBMI);
+
+//type conversion
+const inputYer = "1987";
+console.log(Number(inputYer), inputYer);
+console.log(Number(inputYer) + 18);
+
+console.log(Number("Lasha"));
+
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log("I am " + 23 + " yaers old");
+console.log("23" + "10" + 3);
+console.log("23" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+
+//fales values: 0," ", undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Lasha"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 100;
+
+if (money) {
+  console.log("Don't spend it all :)");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+  console.log("YAY! Height is definet");
+} else {
+  console.log("Height in UNDEFINED");
+}
+*/
+
+const age = 18;
+if (age === 18) {
+  console.log("You just become an adult :D");
+}
