@@ -196,9 +196,96 @@ if (height) {
 } else {
   console.log("Height in UNDEFINED");
 }
-*/
 
-const age = 18;
+
+const age = "18";
 if (age === 18) {
   console.log("You just become an adult :D");
+}
+
+if (age == 18) {
+  console.log("You just become an adult :D (loose)");
+}
+
+const favourit = Number(prompt("What's your favorite number?"));
+console.log(favourit);
+console.log(typeof favourit);
+
+if (favourit === 23) {
+  //"23" ==
+  console.log("cool! 23 is an amazing number!");
+} else if (favourit === 7) {
+  console.log("7 is also a cool number!");
+} else if (favourit === 9) {
+  console.log("9 is also a cool number!");
+} else {
+  console.log("Number is not 23 or 7 or 9");
+}
+
+if (favourit !== 23) {
+  console.log("Why not 23?");
+}
+
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision); //AND;
+console.log(hasDriversLicense || hasGoodVision); //OR
+console.log(!hasDriversLicense); //NOT
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log("Lasha is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false;
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Lasha is able to drive!");
+} else {
+  console.log("Someione else should drive...");
+}
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+if (scoreDolphins > scoreKoalas) {
+  console.log("Dolphins win the trophy");
+} else if (scoreDolphins < scoreKoalas) {
+  console.log("Koalas win the trophy");
+} else {
+  console.log("Both win the trophy");
+}
+*/
+const day = "wednesday";
+switch (day) {
+  case "monday": //day==="monday"
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tursday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("enjou the weekend");
+    break;
+  default:
+    console.log("Not a valid day!");
+}
+
+if (day === "wednesday" || "thursday") {
+  console.log("Write code examples");
 }
